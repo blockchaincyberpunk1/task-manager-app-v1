@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 5000; // Use the PORT environment variable if available, or default to 5000
 app.use(cors());
 // Connect to MongoDB using environment variable
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI);
 
 const db = mongoose.connection;
 
